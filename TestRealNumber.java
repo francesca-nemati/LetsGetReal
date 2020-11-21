@@ -19,5 +19,9 @@ public class TestRealNumber {
 
     System.out.println(num1.multiply(num2) + ": should be 9900;");
     System.out.println(num5.multiply(num1) + ": should be 314.15926;");
+
+    System.out.println(num3.divide(num4));
+    System.out.println(num5.divide(num1) + ": should be 0.031415926");
+
   }
 }

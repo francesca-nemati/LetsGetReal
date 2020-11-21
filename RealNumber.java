@@ -67,7 +67,8 @@ public class RealNumber {
    *this divided by the other
    */
    public RealNumber divide(RealNumber other){
-         return null;
+     RealNumber quotient = new RealNumber(getValue() / other.getValue());
+     return quotient;
    }
 
    /*
