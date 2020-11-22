@@ -75,9 +75,19 @@ public class RationalNumber extends RealNumber
   *@return the value of the GCD
   */
   private static int gcd(int a, int b){
-    /*use euclids method or a better one*/
-    http://sites.math.rutgers.edu/~greenfie/gs2004/euclid.html
-    return 0;
+    //Euclid's method
+    if (a < b) {
+      int a1 = a;
+      a = b;
+      b = a1; //switching values
+    }
+    int r = (a % b);
+    while (r != 0) {
+      a = b;
+      b = r;
+      r = (a % b);
+    }
+    return b;
   }
 
   /**
