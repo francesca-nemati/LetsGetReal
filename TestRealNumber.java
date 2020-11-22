@@ -23,5 +23,9 @@ public class TestRealNumber {
     System.out.println(num3.divide(num4));
     System.out.println(num5.divide(num1) + ": should be 0.031415926");
 
+    System.out.println(num3.subtract(num4) + ": should be -0.000000001");
+    System.out.println(num5.subtract(num6) + ": should be 0.00000000535");
+    System.out.println(num1.subtract(num2) + ": should be 1");
+
   }
 }
