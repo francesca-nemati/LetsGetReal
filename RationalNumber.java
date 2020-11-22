@@ -23,7 +23,9 @@ public class RationalNumber extends RealNumber
   }
 
   public double getValue(){
-    return (numerator/denominator);
+    double nume = numerator;
+    double deno = denominator;
+    return (nume / deno);
   }
 
   /**
@@ -43,7 +45,8 @@ public class RationalNumber extends RealNumber
   *and denominator as this RationalNumber but reversed.
   */
   public RationalNumber reciprocal(){
-    return null;
+    RationalNumber reciprocal = new RationalNumber(getDenominator(),getNumerator());
+    return reciprocal;
   }
   /**
   *@return true when the RationalNumbers have the same numerators and denominators, false otherwise.

@@ -26,6 +26,40 @@ public class TestRealNumber {
     System.out.println(num3.subtract(num4) + ": should be -0.000000001");
     System.out.println(num5.subtract(num6) + ": should be 0.00000000535");
     System.out.println(num1.subtract(num2) + ": should be 1");
+    System.out.println();
+
+    RationalNumber rat1 = new RationalNumber(1,2);
+    RationalNumber rat2 = new RationalNumber(2,1);
+    RationalNumber rat3 = new RationalNumber(1,0);
+    RationalNumber rat4 = new RationalNumber(3,-4);
+    RationalNumber rat5 = new RationalNumber(-3,-4);
+
+    System.out.println(rat1.getValue() + ": should be 0.5");
+    System.out.println(rat2.getValue() + ": should be 2");
+    System.out.println(rat3.getValue() + ": should be 0");
+    System.out.println(rat4.getValue() + ": should be -0.75");
+    System.out.println(rat5.getValue() + ": should be 0.75");
+    System.out.println();
+
+    System.out.println(rat1.getNumerator() + ": should be 1");
+    System.out.println(rat2.getNumerator() + ": should be 2");
+    System.out.println(rat3.getNumerator() + ": should be 0");
+    System.out.println(rat4.getNumerator() + ": should be -3");
+    System.out.println(rat5.getNumerator() + ": should be 3");
+    System.out.println();
+
+    System.out.println(rat1.getDenominator() + ": should be 2");
+    System.out.println(rat2.getDenominator() + ": should be 1");
+    System.out.println(rat3.getDenominator() + ": should be 1");
+    System.out.println(rat4.getDenominator() + ": should be 4");
+    System.out.println(rat5.getDenominator() + ": should be 4");
+    System.out.println();
+
+    System.out.println(rat1.reciprocal().getValue() + ": should be 2");
+    System.out.println(rat2.reciprocal().getValue() + ": should be 0.5");
+    System.out.println(rat3.reciprocal().getValue() + ": should be 0");
+    System.out.println(rat4.reciprocal().getValue() + ": should be -1.333333");
+    System.out.println(rat5.reciprocal().getValue() + ": should be 1.3333333");
 
   }
 }
