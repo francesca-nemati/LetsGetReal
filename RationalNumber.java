@@ -96,7 +96,10 @@ public class RationalNumber extends RealNumber
   *reduced after construction.
   */
   private void reduce(){
-
+    int oldNume = getNumerator();
+    int oldDeno = getDenominator();
+    numerator = oldNume / gcd(oldNume, oldDeno);
+    denominator = oldDeno / gcd(oldNume, oldDeno);
   }
   /******************Operations Return a new RationalNumber!!!!****************/
   /**

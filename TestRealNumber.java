@@ -70,8 +70,14 @@ public class TestRealNumber {
     System.out.println(rat4.toString() + ": should be -3/4");
     System.out.println();
 
-    System.out.println(RationalNumber.gcd(210,45) + ": should be 15");
-    System.out.println(RationalNumber.gcd(45,210) + ": should be 15");
+    // System.out.println(RationalNumber.gcd(210,45) + ": should be 15");
+    // System.out.println(RationalNumber.gcd(45,210) + ": should be 15");
+    // System.out.println();
+
+    RationalNumber rat6 = new RationalNumber(6,8);
+    // rat6.reduce();
+    // System.out.println(rat6.getNumerator());
+    // System.out.println(rat6.getDenominator());
 
   }
 }
