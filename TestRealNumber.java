@@ -80,8 +80,8 @@ public class TestRealNumber {
     // System.out.println(rat6.getDenominator());
 
     System.out.println(rat2.multiply(rat1));
-    System.out.println(rat2.multiply(rat1).getNumerator());
-    System.out.println(rat2.multiply(rat1).getDenominator());
+    System.out.println();
 
+    System.out.println(rat2.divide(rat1));
   }
 }
