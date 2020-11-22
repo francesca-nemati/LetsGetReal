@@ -61,5 +61,8 @@ public class TestRealNumber {
     System.out.println(rat4.reciprocal().getValue() + ": should be -1.333333");
     System.out.println(rat5.reciprocal().getValue() + ": should be 1.3333333");
 
+    System.out.println(rat1.equals(rat2) + ": should be false");
+    System.out.println(rat1.equals(rat2.reciprocal()) + ": should be true");
+
   }
 }
