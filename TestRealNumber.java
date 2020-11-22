@@ -83,5 +83,8 @@ public class TestRealNumber {
     System.out.println();
 
     System.out.println(rat2.divide(rat1));
+    System.out.println();
+
+    System.out.println(rat2.add(rat1));
   }
 }
