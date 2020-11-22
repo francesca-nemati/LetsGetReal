@@ -20,6 +20,7 @@ public class RationalNumber extends RealNumber
       numerator = numerator * -1;
       denominator = denominator * -1;
     }
+    reduce();
   }
 
   public double getValue(){
@@ -76,18 +77,20 @@ public class RationalNumber extends RealNumber
   */
   private static int gcd(int a, int b){
     //Euclid's method
-    if (a < b) {
-      int a1 = a;
-      a = b;
-      b = a1; //switching values
+    int A = Math.abs(a);
+    int B = Math.abs(b);
+    if (A < B && A != 0) {
+      int A1 = A;
+      A = B;
+      B = A1; //switching values
     }
-    int r = (a % b);
+    int r = (A % B);
     while (r != 0) {
-      a = b;
-      b = r;
-      r = (a % b);
+      A = B;
+      B = r;
+      r = (A % B);
     }
-    return b;
+    return B;
   }
 
   /**
