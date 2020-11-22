@@ -86,5 +86,8 @@ public class TestRealNumber {
     System.out.println();
 
     System.out.println(rat2.add(rat1));
+    System.out.println();
+
+    System.out.println(rat2.subtract(rat1));
   }
 }
