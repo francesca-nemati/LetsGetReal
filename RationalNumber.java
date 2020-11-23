@@ -1,4 +1,4 @@
-public class RationalNumber extends RealNumber
+public class RationalNumber extends Number
 {
   private int numerator, denominator;
 
@@ -9,7 +9,6 @@ public class RationalNumber extends RealNumber
   *@param deno the denominator
   */
   public RationalNumber(int nume, int deno){
-    super(0.0);//this value is ignored!
     numerator = nume;
     denominator = deno;
     if (deno == 0) {

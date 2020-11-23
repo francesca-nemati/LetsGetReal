@@ -6,7 +6,7 @@ public abstract class Number{
  return a positive value when this Number is larger than the other Number
  */
  public int compareTo(Number other){
-   if (getValue().equals(other.getValue())) {
+   if (getValue() == other.getValue()) {
      return 0;
    }
    if (getValue() < other.getValue()) {
@@ -15,6 +15,7 @@ public abstract class Number{
    if (getValue() > other.getValue()) {
      return 1;
    }
+   else return 1;
  }
 
  /*
@@ -23,6 +24,24 @@ public abstract class Number{
  *Special case: if one is exactly zero, the other must be exactly zero.
  */
  public boolean equals(Number other){
-   //TO BE IMPLEMENTED  }
+   if (getValue() == 0) {
+     if (other.getValue() == 0) {
+       return true;
+     }
+     else return false;
+   }
+
+   if (other.getValue() == 0) {
+     if (getValue() == 0) {
+       return true;
+     }
+     else return false;
+   }
+
+   double percentDifference = ((Math.abs((getValue() - other.getValue()) / ((getValue() + other.getValue()) / 2))) * 100);
+   if (percentDifference <= 0.001) {
+     return true;
+   }
+   else return false;
  }
 }
