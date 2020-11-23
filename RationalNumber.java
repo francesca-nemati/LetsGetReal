@@ -66,6 +66,7 @@ public class RationalNumber extends RealNumber
   *@return the value expressed as "3/4" or "8/3"
   */
   public String toString(){
+    if (getDenominator() == 1) return "" + getNumerator();
     String rational = "" + numerator + "/" + denominator;
     return rational;
   }
