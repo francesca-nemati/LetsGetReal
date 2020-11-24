@@ -66,6 +66,7 @@ public class RationalNumber extends Number
   */
   public String toString(){
     if (getDenominator() == 1) return "" + getNumerator();
+    if (getNumerator() == 0) return "" + 0;
     String rational = "" + numerator + "/" + denominator;
     return rational;
   }
